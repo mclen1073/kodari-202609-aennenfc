@@ -1,0 +1,52 @@
+messages:
+  prefix: '&8[&bMorphing&8] &r'
+  no-permission: '&cYou do not have permission to use that morph.'
+  unknown-morph: '&cUnknown morph. Use &f/morph list&c.'
+  morph-list: '&bAvailable morphs: &f{morphs}'
+  transformed: '&aYou transformed into &f{morph}&a. Sneak or use the configured ability controls.'
+  ended: '&eYour morph has ended.'
+  already-morphed: '&eYou are already morphed as &f{morph}&e.'
+  milestone: '&6Milestone unlocked: &f{milestone}&6!'
+  abducted: '&dA UFO has abducted you! Reach the glowing escape point before time runs out.'
+  escape-success: '&aYou escaped the UFO and returned safely.'
+  escape-failed: '&cThe UFO challenge timed out. You were returned to your starting point.'
+
+abduction:
+  enabled: true
+  every-morphs: 10
+  challenge-seconds: 45
+  challenge-distance: 18.0
+  height: 12.0
+
+milestones:
+  rolling-stone:
+    distance: 1000.0
+    message: 'Rolling Stone'
+  first-morph:
+    morphs: 1
+    message: 'First Transformation'
+  morph-collector:
+    morphs: 5
+    message: 'Morph Collector'
+
+morphs:
+  wolf:
+    display-name: '&fWolf'
+    entity: WOLF
+    permission: morphing.morph.wolf
+    abilities: [speed, leap]
+  blaze:
+    display-name: '&6Blaze'
+    entity: BLAZE
+    permission: morphing.morph.blaze
+    abilities: [fireball, jump]
+  iron-golem:
+    display-name: '&7Iron Golem'
+    entity: IRON_GOLEM
+    permission: morphing.morph.iron-golem
+    abilities: [strength, roar]
+  phantom:
+    display-name: '&bPhantom'
+    entity: PHANTOM
+    permission: morphing.morph.phantom
+    abilities: [speed, leap, roar]

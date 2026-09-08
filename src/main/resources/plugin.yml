@@ -1,0 +1,39 @@
+name: Morphing
+version: 1.0.0
+main: com.kodari.morphing.MorphingPlugin
+api-version: '1.21'
+author: Kodari
+description: Configurable mob morphs with abilities, milestones, and UFO abductions.
+commands:
+  morph:
+    description: Transform into a configured mob.
+    usage: /morph <type|list|off>
+    aliases: [morphs]
+permissions:
+  morphing.use:
+    description: Allows the player to use morphs.
+    default: true
+  morphing.morph.*:
+    description: Allows every configured morph.
+    default: op
+    children:
+      morphing.use: true
+      morphing.morph.wolf: true
+      morphing.morph.blaze: true
+      morphing.morph.iron-golem: true
+      morphing.morph.phantom: true
+  morphing.morph.wolf:
+    description: Allows the wolf morph.
+    default: op
+  morphing.morph.blaze:
+    description: Allows the blaze morph.
+    default: op
+  morphing.morph.iron-golem:
+    description: Allows the iron golem morph.
+    default: op
+  morphing.morph.phantom:
+    description: Allows the phantom morph.
+    default: op
+  morphing.admin:
+    description: Allows administrative morph commands.
+    default: op
